@@ -7,7 +7,7 @@ import { Cookies } from "react-cookie";
 const personContentList = ({children, key}) => {
   return(
     <List>
-      <p>{children}</p>
+      <p key={key}>{children}</p>
       <div>
         <BgBtn bgColor={'#FFB996'}>권한 포기</BgBtn>
       </div>

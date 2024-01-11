@@ -9,7 +9,7 @@ const PersonContent = () => {
     const userId = cookies.get('id')
     const getAccessUsers = async() => {
         try{
-            fetch(`http://121.162.72.121:5500/getAccessUsers/${userId}`,{
+            fetch(`http://10.56.148.79:5500/getAccessUsers/${userId}`,{
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json"
@@ -35,7 +35,7 @@ const PersonContent = () => {
                 {
                     person.map(user => {
                         const content = `${user.id}(${user.name})`
-                        return <PersonContentList key={user.id}>{content}</PersonContentList>
+                        return <PersonContentList key={user._id}>{content}</PersonContentList>
                     })
                 }
             </ListWrap>

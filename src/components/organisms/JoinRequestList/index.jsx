@@ -24,7 +24,7 @@ const JoinRequestList = ({children, state, id}) => {
 
   const requestCancel = async () => {
     try {
-      await fetch(`http://121.162.72.121:5500/deleteRequest/${id}/${userId}`, {
+      await fetch(`http://10.56.148.79:5500/deleteRequest/${id}/${userId}`, {
           method: 'DELETE'
       })
     } catch (error) {
@@ -34,7 +34,7 @@ const JoinRequestList = ({children, state, id}) => {
 
   const groupJoinRequest = async () => {
     try {
-      await fetch(`http://121.162.72.121:5500/groupJoinRequest/`, {
+      await fetch(`http://10.56.148.79:5500/groupJoinRequest`, {
           method: 'POST',
           headers: {
             "Content-Type": "application/json"

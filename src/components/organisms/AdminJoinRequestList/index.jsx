@@ -11,7 +11,7 @@ const JoinRequestList = ({children, id, rerender}) => {
 
   const requestCancel = async () => {
     try {
-      await fetch(`http://121.162.72.121:5500/deleteRequest/${id}/${userId}`, {
+      await fetch(`http://10.56.148.79:5500/deleteRequest/${id}/${userId}`, {
           method: 'DELETE'
       }).then(res => res.json())
       .then(result => {
@@ -25,7 +25,7 @@ const JoinRequestList = ({children, id, rerender}) => {
 
   const accessRequest  = async () => {
     try {
-      await fetch(`http://121.162.72.121:5500/accessRequest/${userId}/${id}`, {
+      await fetch(`http://10.56.148.79:5500/accessRequest/${userId}/${id}`, {
           method: 'PATCH',
           headers: {
               "Content-Type": "application/json"
