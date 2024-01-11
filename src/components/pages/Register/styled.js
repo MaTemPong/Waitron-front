@@ -159,7 +159,7 @@ export const Title = styled.h1`
   rgba(90, 90, 90, 1) 98px 98px,
   rgba(90, 90, 90, 1) 99px 99px,
   rgba(90, 90, 90, 1) 100px 100px;
-}
+
 
 `;
 

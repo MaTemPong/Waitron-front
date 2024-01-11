@@ -30,7 +30,7 @@ const Register = () => {
         if(!regex.test(email)) return alert('이메일 형식이 잘못되었거나 공백입니다.');
 
         try {
-            await fetch('http://10.56.148.79:5500/signup', {
+            await fetch('http://121.162.72.121:5500/signup', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"

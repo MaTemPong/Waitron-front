@@ -14,7 +14,7 @@ export const ContentsContainer = styled.div`
     ${Input}{
         font-size: 1.2rem;
         position: absolute;
-        left: 100%;
+        right: 0%;
     }
 `
 

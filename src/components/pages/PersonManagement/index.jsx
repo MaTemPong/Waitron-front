@@ -3,7 +3,7 @@ import * as S from "./styled"
 import ManagementTitle from "../../atoms/ManagementTitle";
 import Input from "../../atoms/Input";
 import ListWrap from "../../atoms/ListWrap";
-import PersonContent from "../../organisms/personContent";
+import PersonContent from "../../organisms/PersonContent";
 import AdminJoinRequestManagementContent from "../../organisms/AdminJoinRequestManagementContent";
 
 const PersonManagement = () => {
@@ -33,6 +33,7 @@ const PersonManagement = () => {
     }, [mode])
 
     useEffect(() => {
+        console.log('af')
     }, [searchValue])
 
     return(
@@ -43,9 +44,6 @@ const PersonManagement = () => {
                     <S.ModeBtn onClick={()=> SaveMode('person')} style={{backgroundColor : personMode? 'orange': 'white'}}>인원</S.ModeBtn>
                     <S.ModeBtn onClick={()=> SaveMode('request')} style={{backgroundColor : requestMode? 'orange': 'white'}}>참가요청</S.ModeBtn>
                 </S.ModeChanger>
-                <S.InputWrap>
-                    <Input saveVal={searchValue} setSaveVal={SaveSearchValue} placeHolder={"검색할 키워드를 입력하세요."}/>
-                </S.InputWrap>
                 <ListWrap>
                 </ListWrap>
                 {personMode ? <PersonContent/> : <AdminJoinRequestManagementContent filterText={searchValue}/>}
