@@ -10,7 +10,7 @@ const AdminJoinRequestManagementContent = () => {
     const [canAccessUsers, SetCanAccessUsers] = useState([])
     const getRequests = async () => {
         try {
-            await fetch(`http://10.56.148.79:5500/getUserRequest/${uesrId}`, {
+            await fetch(`http://10.246.156.106:5500/getUserRequest/${uesrId}`, {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json"

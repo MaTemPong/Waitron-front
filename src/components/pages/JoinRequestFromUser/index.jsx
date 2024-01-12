@@ -22,7 +22,7 @@ const JoinRequestFromUser = () => {
 
     const FetchUsers = async () => {
         try {
-            await fetch(`http://10.56.148.79:5500/getUsers`, {
+            await fetch(`http://10.246.156.106:5500/getUsers`, {
                 method: 'GET'
             })
             .then((response) => response.json())
@@ -36,7 +36,7 @@ const JoinRequestFromUser = () => {
 
     const FetchRequest = async () => {
         try {
-            await fetch(`http://10.56.148.79:5500/getAdminRequest/${userId}`, {
+            await fetch(`http://10.246.156.106:5500/getAdminRequest/${userId}`, {
                 method: 'GET'
             })
             .then((response) => response.json())

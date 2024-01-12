@@ -9,7 +9,7 @@ const PersonContent = () => {
     const userId = cookies.get('id')
     const getAccessUsers = async() => {
         try{
-            fetch(`http://10.56.148.79:5500/getAccessUsers/${userId}`,{
+            fetch(`http://10.246.156.106:5500/getAccessUsers/${userId}`,{
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json"
